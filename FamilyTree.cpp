@@ -161,6 +161,9 @@ namespace family
 
     string Tree::find(string s)
     {
+                if (s.find(",") != std::string::npos || s.find("?") != std::string::npos || s.find(" ") != std::string::npos)
+            throw invalid_argument("s");
+        
         if (s == "father")
         {
             if (this->father == nullptr)

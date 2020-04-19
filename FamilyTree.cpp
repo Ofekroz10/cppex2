@@ -55,11 +55,13 @@ namespace family
             if(found == nullptr)
                 throw std::out_of_range("There is no child that his name is "+child);
 
-            if(found->father == nullptr)
+            if (found->father == nullptr)
             {
                 found->father = new Tree(father);
                 return *this;
             }
+            else
+                throw invalid_argument("Ss");
     
         }
         else

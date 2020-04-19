@@ -164,6 +164,9 @@ namespace family
                 if (s.find(",") != std::string::npos || s.find("?") != std::string::npos || s.find(" ") != std::string::npos)
             throw invalid_argument("s");
         
+                if (this == nullptr)
+            throw invalid_argument("ss");
+        
         if (s == "father")
         {
             if (this->father == nullptr)

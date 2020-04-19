@@ -93,6 +93,8 @@ namespace family
                 found->mother = new Tree(mother);
                 return *this;
             }
+            else
+                throw invalid_argument("Ss");
     
         }
         else

@@ -145,7 +145,7 @@ namespace family
                 string value = "";
 
                 for(int i =0; i<grandNum;i++)
-                    value += "grant-";
+                    value += "great-";
 
                 if(fOrM == 2)
                     value +="grandmother";
